@@ -1,0 +1,40 @@
+{
+  "name": "getir",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cross-env node app.js",
+    "startDev": "cross-env NODE_ENV=dev node app.js",
+    "test": "cross-env NODE_ENV=test jest --testTimeout=25000 --forceExit"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-winston": "^4.0.5",
+    "http-errors": "~1.6.3",
+    "joi": "^17.2.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.2",
+    "pug": "2.0.0-beta11",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.12",
+    "@types/mocha": "^8.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
