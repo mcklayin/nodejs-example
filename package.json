@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env node app.js",
+    "start": "cross-env NODE_ENV=production node app.js",
     "startDev": "cross-env NODE_ENV=dev node app.js",
     "test": "cross-env NODE_ENV=test jest --testTimeout=25000 --forceExit"
   },
