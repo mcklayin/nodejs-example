@@ -8,8 +8,8 @@ module.exports = {
     uri: process.env.MONGO_URI || '',
   },
   server: {
-    host: process.env.SERVER_HOST || 'localhost',
-    port: process.env.SERVER_PORT || 3030,
+    host: process.env.HOST || 'localhost',
+    port: process.env.PORT || 3030,
   },
   logger: {
     level: process.env.LOGGER_LEVEL || 'info',
